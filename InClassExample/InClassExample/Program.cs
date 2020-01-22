@@ -27,13 +27,44 @@ namespace InClassExample
 
         static void Main(string[] args)
         {
+
+            double num1 = 100;
+                double num2 = 300;
+            double num3 = 400;
             double result = Add(5,6);
 
             Console.WriteLine($"5 + 6 = {result.ToString("N2")}");
             Console.ReadLine();
+
+            double[] nums = {num1, num2, num3 };
         }
 
-       
+       static double Add(double[] numbersToAddUp)
+        {
+            double r = 0;
+            int counter = 0;
+            while (counter < numbersToAddUp.Length)
+            {
+                var number = numbersToAddUp[counter];
+                r += number;
+                counter++;
+            }
+
+            for (counter =0; counter < numbersToAddUp.Length; counter++)
+
+            {
+                var number = numbersToAddUp[counter];
+                r += number;
+
+            }
+            foreach (var number in numbersToAddUp)
+            {
+                r += number;
+
+            }
+
+            return r;
+        }
 
         
     }
