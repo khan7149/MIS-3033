@@ -39,7 +39,14 @@ namespace InClassExample
             double[] nums = {num1, num2, num3 };
         }
 
-       static double Add(double[] numbersToAddUp)
+        /// <summary>
+        /// Overload method 
+        /// </summary>
+        /// <param name="numbersToAddUp"></param>
+        /// <returns></returns>
+
+
+        static double Add(double[] numbersToAddUp)
         {
             double r = 0;
             int counter = 0;
